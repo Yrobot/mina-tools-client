@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/mina-touch/demo1/index", 
+    "pages/mina-touch/demo2/index",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "mina-tools-client",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
