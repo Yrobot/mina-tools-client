@@ -2,6 +2,9 @@
 
 本代码库主要用于展示 Yrobot 开发的一些微信小程序三方库的效果和交互
 
+## 小程序二维码  
+
+![](https://tva1.sinaimg.cn/large/0081Kckwly1glmk9m5e9jj3076076my2.jpg)
 
 ## 三方库列表  
 
