@@ -1,0 +1,7 @@
+<popup-fixed selector="{{selector}}" id="popup-fixed" bg-close="{{!!bgClose}}">
+  <view class="popup-window">
+    <view class="window-inner">
+      <slot></slot>
+    </view>
+  </view>
+</popup-fixed>

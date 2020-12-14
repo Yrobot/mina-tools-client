@@ -1,15 +1,14 @@
 {
-  "pages": [
-    "pages/mina-touch/demo1/index", 
-    "pages/mina-touch/demo2/index",
-    "pages/index/index"
-  ],
+  "pages": ["pages/index/index", "pages/mina-touch/demo1/index", "pages/mina-touch/demo2/index"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "mina-tools-client",
+    "navigationBarTitleText": "小程序实用库展示",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
 }

@@ -1,0 +1,6 @@
+<block wx:if='{{visible}}'>
+  <view class="popup-BG" capture-catch:touchmove='catchTouchMove' bindtap='tapBG'></view>
+  <view class="popup-fixed-slot" style='{{positionStyle}}'>
+    <slot></slot>
+  </view>
+</block>

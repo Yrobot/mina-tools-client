@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "mp-navigation-bar": "weui-miniprogram/navigation-bar/navigation-bar",
+    "home-menu": "../../components/home-menu"
+  }
 }

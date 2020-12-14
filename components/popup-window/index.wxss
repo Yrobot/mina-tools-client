@@ -1,0 +1,27 @@
+.popup-window {
+  --top-margin: 16rpx;
+  --window-padding: 20rpx;
+  box-sizing: border-box;
+  margin-top: var(--top-margin);
+  margin-left: calc(0rpx - var(--window-padding));
+  padding: 14rpx var(--window-padding);
+  border-radius: 6rpx;
+  background-color: #fff;
+}
+
+.popup-window:after {
+  position: absolute;
+  top: 2rpx;
+  transform: translate(-50%, 0);
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-left: 22rpx solid transparent;
+  border-right: 22rpx solid transparent;
+  border-bottom: 30rpx solid #fff;
+  border-radius: 6rpx;
+}
+
+.popup-window .window-inner{
+  position: relative;
+}
