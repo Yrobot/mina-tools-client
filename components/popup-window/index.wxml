@@ -1,7 +1,10 @@
-<popup-fixed selector="{{selector}}" id="popup-fixed" bg-close="{{!!bgClose}}">
-  <view class="popup-window">
+<popup-fixed selector="{{selector}}" id="popup-fixed" tap-bg-close="{{!!tapBgClose}}" bindposition='doDirection'
+  backgroundColor='{{backgroundColor}}' catchScroll="{{catchScroll}}" scroll-bg-close='{{scrollBgClose}}'>
+  <view class="popup-window float-{{isLeft?'left':'right'}} float-{{isTop?'top':'bottom'}}"
+    style="--node-half-height:{{nodeHalfHeight}}px">
     <view class="window-inner">
       <slot></slot>
     </view>
+    <view class="triangle-{{isTop?'up':'down'}} float-{{isLeft?'left':'right'}}"></view>
   </view>
 </popup-fixed>

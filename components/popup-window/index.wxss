@@ -1,19 +1,40 @@
 .popup-window {
-  --top-margin: 16rpx;
-  --window-padding: 20rpx;
+  --icon-height: 16rpx;
+  --icon-left: 30rpx;
+  position: absolute;
+  transform: translate(0, 0) !important;
+  left: calc(0rpx - var(--icon-left));
+  right: calc(0rpx - var(--icon-left));
+  top: var(--node-half-height);
+  bottom: var(--node-half-height);
+  margin: var(--icon-height) 0;
   box-sizing: border-box;
-  margin-top: var(--top-margin);
-  margin-left: calc(0rpx - var(--window-padding));
-  padding: 14rpx var(--window-padding);
+  padding: 14rpx 20rpx;
   border-radius: 6rpx;
   background-color: #fff;
+  overflow: visible;
 }
 
-.popup-window:after {
-  position: absolute;
-  top: 2rpx;
+.float-left {
+  right: auto !important;
   transform: translate(-50%, 0);
-  content: ' ';
+}
+.float-right {
+  left: auto !important;
+  transform: translate(50%, 0);
+}
+.float-top {
+  bottom: auto !important;
+}
+.float-bottom {
+  top: auto !important;
+}
+
+.popup-window .triangle-up {
+  position: absolute;
+  top: calc(0rpx - var(--icon-height));
+  left: var(--icon-left);
+  right: var(--icon-left);
   width: 0;
   height: 0;
   border-left: 22rpx solid transparent;
@@ -22,6 +43,19 @@
   border-radius: 6rpx;
 }
 
-.popup-window .window-inner{
+.popup-window .triangle-down {
+  position: absolute;
+  bottom: calc(0rpx - var(--icon-height));
+  left: var(--icon-left);
+  right: var(--icon-left);
+  width: 0;
+  height: 0;
+  border-left: 22rpx solid transparent;
+  border-right: 22rpx solid transparent;
+  border-top: 30rpx solid #fff;
+  border-radius: 6rpx;
+}
+
+.popup-window .window-inner {
   position: relative;
 }

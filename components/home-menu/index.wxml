@@ -14,7 +14,7 @@
         </view>
       </navigator> -->
       <view class="user-menu-item-line menu-line-padding">
-        <span>有需求-联系客服</span>
+        <span>有需求</span>
         <view class="iconfont icon-right"></view>
         <button class="clear-hover-button" open-type='contact'></button>
       </view>

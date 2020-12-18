@@ -1,6 +1,9 @@
 <block wx:if='{{visible}}'>
-  <view class="popup-BG" capture-catch:touchmove='catchTouchMove' bindtap='tapBG'></view>
-  <view class="popup-fixed-slot" style='{{positionStyle}}'>
+  <view wx:if="{{catchScroll}}" class="popup-BG" capture-catch:touchmove='touchMove' bindtap='tapBG'
+    style='background-color: {{backgroundColor||"rgba(106, 106, 106, 0.23)"}};'></view>
+  <view wx:else class="popup-BG" bind:touchmove='touchMove' bindtap='tapBG'
+    style='background-color: {{backgroundColor||"rgba(106, 106, 106, 0.23)"}};'></view>
+  <view class="popup-fixed-slot" style='left:{{node.left+node.width/2}}px;top:{{node.top+node.height/2}}px;'>
     <slot></slot>
   </view>
 </block>
