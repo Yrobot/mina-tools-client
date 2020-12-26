@@ -2,7 +2,11 @@
 
 page {
   --main-color: #2c2c2c;
+  --main-BG: #f8f8f8;
   color: var(--main-color);
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background-color: var(--main-BG);
 }
 
 .logo {

@@ -5,5 +5,16 @@
   <view class="logo-box center-center">
     <view class="iconfont icon-Yorbot logo"></view>
   </view>
+  <collapse ext-class='collapse' wx:for="{{repositories}}" wx:for-item='box' wx:key='index'>
+    <view class="collapse-card" slot='card'>
+      <view class="title">{{box.title}}</view>
+      <view class="iconfont {{box.icon}}"></view>
+    </view>
+    <view class="collapse-list" slot='list'>
+      <navigator wx:for="{{demo_list}}" wx:key='index' url="{{item.path}}">
+        <view class="item">{{item.title}}</view>
+      </navigator>
+    </view>
+  </collapse>
   <home-menu selector='.navigation-bar-icon' id='home-menu' />
 </block>

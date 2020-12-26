@@ -1,0 +1,8 @@
+.collapse-holder {
+  width: 100%;
+}
+.collapse-list-holder {
+  width: 100%;
+  /* transition 对于auto无效 */
+  /* transition: height 0.2s; */ 
+}
