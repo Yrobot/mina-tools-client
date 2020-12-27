@@ -1,4 +1,6 @@
 {
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
   "description": "项目配置文件",
   "packOptions": {
     "ignore": []
@@ -49,24 +51,43 @@
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
+    "plugin": {
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "plugin": {
       "list": []
     },
     "gamePlugin": {
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "pages/mina-touch/demo1/index",
+          "pathName": "pages/mina-touch/demo1/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mina-touch/demo2/index",
+          "pathName": "pages/mina-touch/demo2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mina-touch/demo3/index",
+          "pathName": "pages/mina-touch/demo3/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mina-touch/demo4/index",
+          "pathName": "pages/mina-touch/demo4/index",
+          "scene": null
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,6 @@
+<view class="background">
+  <view class="box" style="transform:rotate({{angle}}deg) scale({{zoom}});" catchtouchstart="touch1.start"
+    catchtouchmove="touch1.move" catchtouchend="touch1.end" catchtouchcancel="touch1.cancel">
+    <div class="tips">多指控制试试</div>
+  </view>
+</view>

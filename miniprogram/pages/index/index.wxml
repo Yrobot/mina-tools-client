@@ -1,0 +1,21 @@
+<block>
+  <mp-navigation-bar back="{{false}}" background='#ffffff' ext-class='reset-navigation-bar'>
+    <view class="iconfont icon-menu navigation-bar-icon" slot='left' bindtap='tapMenu'></view>
+  </mp-navigation-bar>
+  <view class="logo-box center-center">
+    <view class="iconfont icon-Yorbot logo"></view>
+    <view class="tips tips-color">本小程序主要用于展示一些在微信小程序开发中 实用的工具库</view>
+  </view>
+  <collapse ext-class='collapse' wx:for="{{repositories}}" wx:for-item='box' wx:key='index'>
+    <view class="collapse-card" slot='card'>
+      <view class="title">{{box.title}}</view>
+      <view class="iconfont {{box.icon}}"></view>
+    </view>
+    <view class="collapse-list" slot='list'>
+      <navigator wx:for="{{box.demo_list}}" wx:key='index' url="{{item.path}}" class="item">
+        {{item.title}}
+      </navigator>
+    </view>
+  </collapse>
+  <home-menu selector='.navigation-bar-icon' id='home-menu' />
+</block>

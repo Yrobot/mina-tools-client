@@ -1,6 +1,0 @@
-<view class="collapse-holder {{extClass}}">
-  <slot name="card" bindtap='switchOpen'></slot>
-  <view class="collapse-list-holder" style="height:{{_open?'0':'auto'}}">
-    <slot name="list"></slot>
-  </view>
-</view>

@@ -1,0 +1,6 @@
+<view class="background">
+  <view class="box" catchtouchstart="touch1.start" catchtouchmove="touch1.move" catchtouchend="touch1.end"
+    catchtouchcancel="touch1.cancel">
+    <div class="tips">{{tip||'长按试试'}}</div>
+  </view>
+</view>

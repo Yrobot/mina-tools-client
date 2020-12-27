@@ -1,0 +1,55 @@
+.navigation-bar-icon {
+  text-align: center;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 50rpx;
+}
+
+.logo-box {
+  width: 100%;
+  padding: 80rpx 50rpx;
+  box-sizing: border-box;
+}
+
+.logo-box .tips {
+  margin-top: 50rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.collapse {
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+}
+
+.collapse-card {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.collapse-card .title {
+}
+.collapse-card .iconfont {
+  flex: none;
+  font-size: 16px;
+}
+.collapse-list {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.collapse-list .item {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+.collapse-list .item:last-child {
+  border: 0;
+}
