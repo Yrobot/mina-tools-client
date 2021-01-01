@@ -93,6 +93,12 @@
           "pathName": "pages/mina-tools/components/popup-window/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "main=mina-tools",
+          "scene": null
         }
       ]
     }

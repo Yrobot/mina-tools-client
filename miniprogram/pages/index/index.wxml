@@ -6,7 +6,7 @@
     <view class="iconfont icon-Yorbot logo"></view>
     <view class="tips tips-color">本小程序主要用于展示一些在微信小程序开发中 实用的工具库</view>
   </view>
-  <collapse ext-class='collapse' wx:for="{{repositories}}" wx:for-item='box' wx:key='index'>
+  <collapse ext-class='collapse' wx:for="{{repositories}}" wx:for-item='box' wx:key='index' id='{{box.id}}' open="{{main==box.id}}">
     <view class="collapse-card" slot='card'>
       <view class="title">{{box.title}}</view>
       <view class="iconfont {{box.icon}}"></view>

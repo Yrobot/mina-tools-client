@@ -4,9 +4,11 @@ const app = getApp();
 
 Page({
   data: {
+    main: '',
     repositories: [
       {
         title: 'mina-touch',
+        id: 'mina-touch',
         icon: 'icon-mina-touch',
         description: '',
         list: [
@@ -34,6 +36,7 @@ Page({
       },
       {
         title: 'mina-tools',
+        id: 'mina-tools',
         icon: 'icon-mina-tools',
         description: '',
         list: [
@@ -105,7 +108,17 @@ Page({
       imageUrl: 'https://t.newscdn.cn/mina/Poster (1).png',
     };
   },
-  onLoad() {
+  onLoad(query) {
+    const { main = '' } = query;
+    if (main) {
+      this.setData({
+        main,
+      });
+      wx.pageScrollTo({
+        selector: `#${main}`,
+        duration: 300
+      })
+    }
     this.menu = this.selectComponent('#home-menu');
   },
   tapMenu(e) {
