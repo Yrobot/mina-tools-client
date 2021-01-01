@@ -4,7 +4,8 @@
   "description": "mina-tools的小程序客户端代码，用于mina-tools的效果展示",
   "main": "app.js",
   "dependencies": {
-    "mina-touch": "^1.0.1"
+    "mina-touch": "^1.0.1",
+    "mina-tools": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {},

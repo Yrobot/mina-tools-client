@@ -1,9 +1,15 @@
 {
   "pages": [
-    "pages/index/index", 
-    "pages/mina-touch/demo1/index", 
-    "pages/mina-touch/demo2/index", 
-    "pages/mina-touch/demo3/index", 
+    "pages/index/index",
+    "pages/mina-tools/components/popup-window/index",
+    "pages/mina-tools/components/data-status/index",
+    "pages/mina-tools/components/error-img/index",
+    "pages/mina-tools/wxs/format/index",
+    "pages/mina-tools/wxss/common/index",
+    "pages/mina-tools/behavior/pageEvent/index",
+    "pages/mina-touch/demo1/index",
+    "pages/mina-touch/demo2/index",
+    "pages/mina-touch/demo3/index",
     "pages/mina-touch/demo4/index"
   ],
   "window": {

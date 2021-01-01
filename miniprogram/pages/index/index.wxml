@@ -11,10 +11,20 @@
       <view class="title">{{box.title}}</view>
       <view class="iconfont {{box.icon}}"></view>
     </view>
-    <view class="collapse-list" slot='list'>
-      <navigator wx:for="{{box.demo_list}}" wx:key='index' url="{{item.path}}" class="item">
-        {{item.title}}
-      </navigator>
+    <view class="collapse-list list" slot='list'>
+      <block wx:for="{{box.list}}" wx:key='index'>
+        <view bindtap='navigateTo' data-path="{{item.path||''}}" class="item {{!!item.path?'':'path-disable'}}">
+          <view class="title">{{item.title}}</view>
+          <view class="desc" wx:if="{{item.description}}">{{item.description}}</view>
+        </view>
+        <view class="sub-list" wx:if="{{!!item.list}}">
+          <view class="item" wx:for='{{item.list}}' wx:for-item='subitem' wx:key='index' bindtap='navigateTo'
+            data-path="{{subitem.path}}">
+            <view class="title">{{subitem.title}}</view>
+            <view class="desc" wx:if="{{subitem.description}}">{{subitem.description}}</view>
+          </view>
+        </view>
+      </block>
     </view>
   </collapse>
   <home-menu selector='.navigation-bar-icon' id='home-menu' />

@@ -1,0 +1,4 @@
+<picker mode='multiSelector' range-key="{{rangeKey}}" range="{{[multiRange[0],multiRange[1][_picking_value[0]]]}}"
+  bindtap='bindTap' bindcolumnchange="bindMultiPickerColumnChange" bindchange='bindChange'>
+  <slot></slot>
+</picker>

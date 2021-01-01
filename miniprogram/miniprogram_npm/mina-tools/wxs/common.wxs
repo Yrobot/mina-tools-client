@@ -1,0 +1,55 @@
+var formatNumber = function (number) {
+  var returnVal = '';
+  var unit = '';
+
+  if (number === null || number === undefined) {
+    return '-';
+  }
+
+  if (typeof number === 'string') {
+    number = parseInt(number);
+  }
+
+  if (Math.abs(number / 100000000) >= 1) {
+    returnVal = parseFloat((number / 100000000).toFixed(2));
+    unit = '亿';
+  } else if (Math.abs(number / 10000) >= 1) {
+    returnVal = parseFloat((number / 10000).toFixed(1));
+    unit = '万';
+  } else {
+    returnVal = number;
+  }
+
+  return returnVal + unit;
+};
+
+var formatTime = function (unix, format = 'YYYY.MM.dd HH:mm:ss') {
+  var time = getDate(unix);
+  var fmt = format;
+  var o = {
+    'M+': time.getMonth() + 1, //月份
+    'd+': time.getDate(), //日
+    'h+': time.getHours() % 12 == 0 ? 12 : time.getHours() % 12, //小时
+    'H+': time.getHours(), //小时
+    'Y+': time.getFullYear(), //年
+    'm+': time.getMinutes(), //分
+    's+': time.getSeconds(), //秒
+    'q+': Math.floor((time.getMonth() + 3) / 3), //季度
+    'S+': time.getMilliseconds(), //毫秒
+  };
+  var keys = ['M+', 'd+', 'h+', 'H+', 'Y+', 'm+', 's+', 'q+', 'S+'];
+  keys.map(function (k) {
+    var regexp = getRegExp(k, 'g');
+    fmt = fmt.replace(regexp, function (replacement) {
+      var preStr = '';
+      for (var i = 0; i < replacement.length; i++) {
+        preStr += '0';
+      }
+      return (preStr + o[k]).substring((preStr + o[k]).length - replacement.length);
+    });
+  });
+  return fmt;
+};
+
+module.exports.formatNumber = formatNumber;
+module.exports.formatTime = formatTime;

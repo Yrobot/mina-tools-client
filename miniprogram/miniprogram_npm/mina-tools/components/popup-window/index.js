@@ -1,8 +1,7 @@
 Component({
   behaviors: ['wx://component-export'],
   export() {
-    this.popupFixed = this.selectComponent('#popup-fixed');
-    return this.popupFixed;
+    return this.getPopupFixed();
   },
   popupFixed: {
     open() {},
@@ -56,9 +55,16 @@ Component({
     nodeHalfHeight: 0,
   },
   lifetimes: {
-    ready() {},
+    ready() {
+      // 防止外部不调用this.selectComponent导致getPopupFixed不触发
+      this.getPopupFixed();
+    },
   },
   methods: {
+    getPopupFixed() {
+      this.popupFixed = this.selectComponent('#popup-fixed');
+      return this.popupFixed;
+    },
     doDirection(e) {
       const { node, viewport } = e.detail || {};
       if (node && viewport) {

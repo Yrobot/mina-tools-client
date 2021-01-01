@@ -1,0 +1,4 @@
+<view class="box" style="transform:translateX(-{{translateX}}px);" bindtouchstart="touch1.start"
+  bindtouchmove="touch1.move" bindtouchend="touch1.end" bindtouchcancel="touch1.cancel">
+  <div class="tips">左右滑动试试</div>
+</view>

@@ -1,0 +1,2 @@
+<image src="{{_src}}" mode='{{mode}}' binderror='onError' lazyLoad="{{lazyLoad}}"
+  showMenuByLongpress="{{showMenuByLongpress}}" />

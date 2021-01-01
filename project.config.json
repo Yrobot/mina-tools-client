@@ -85,6 +85,13 @@
         {
           "name": "pages/mina-touch/demo4/index",
           "pathName": "pages/mina-touch/demo4/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mina-tools/components/popup-window/index",
+          "pathName": "pages/mina-tools/components/popup-window/index",
+          "query": "",
           "scene": null
         }
       ]
