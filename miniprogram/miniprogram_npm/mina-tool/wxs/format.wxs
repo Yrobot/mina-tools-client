@@ -51,5 +51,30 @@ var formatTime = function (unix, format = 'YYYY.MM.dd HH:mm:ss') {
   return fmt;
 };
 
+var formatCountdown = function (s, format = 'hh:mm:ss') {
+  var fmt = format;
+  var hour = parseInt((s / 60 / 60) % 24);
+  var minute = parseInt((s / 60) % 60);
+  var second = parseInt(s % 60);
+  var o = {
+    'h+': hour, //小时
+    'm+': minute, //分钟
+    's+': second, //秒
+  };
+  var keys = ['h+', 'm+', 's+'];
+  keys.map(function (k) {
+    var regexp = getRegExp(k, 'g');
+    fmt = fmt.replace(regexp, function (replacement) {
+      var preStr = '';
+      for (var i = 0; i < replacement.length; i++) {
+        preStr += '0';
+      }
+      return (preStr + o[k]).substring((preStr + o[k]).length - replacement.length);
+    });
+  });
+  return fmt;
+};
+
 module.exports.formatNumber = formatNumber;
 module.exports.formatTime = formatTime;
+module.exports.formatCountdown = formatCountdown;

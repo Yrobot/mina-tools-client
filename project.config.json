@@ -23,7 +23,7 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
+    "useMultiFrameRuntime": true,
     "useApiHook": true,
     "babelSetting": {
       "ignore": [],
@@ -38,7 +38,8 @@
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "useApiHostProcess": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
@@ -98,6 +99,18 @@
           "name": "pages/index/index",
           "pathName": "pages/index/index",
           "query": "main=mina-tools",
+          "scene": null
+        },
+        {
+          "name": "pages/mina-tool/components/keyword-highlight/index",
+          "pathName": "pages/mina-tool/components/keyword-highlight/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "multi-picker",
+          "pathName": "pages/mina-tool/components/multi-picker/index",
+          "query": "",
           "scene": null
         }
       ]

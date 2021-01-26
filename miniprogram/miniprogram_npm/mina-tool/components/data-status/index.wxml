@@ -1,6 +1,6 @@
 <view class="data-status" style="min-height:{{minHeight}}">
   <view class="data-status-empty" wx:if="{{empty}}" style="min-height:{{minHeight}}">
-    <view class="mina-tools-iconfont icon-empty"></view>
+    <view class="mina-tool-iconfont icon-empty"></view>
     <span>暂时没有数据</span>
   </view>
   <slot wx:else></slot>

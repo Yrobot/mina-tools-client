@@ -1,0 +1,24 @@
+<view class="card">
+  <view class="title">支持单行文本溢出省略</view>
+  <keyword-highlight class="one-line" color="{{color}}" text="{{text}}" keyword="{{key}}" />
+</view>
+<view class="card">
+  <view class="title">支持多行文本溢出省略</view>
+  <keyword-highlight class="two-line" color="{{color}}" text="{{text}}" keyword="{{key}}" />
+</view>
+<view class="card">
+  <view class="title">支持高亮颜色修改</view>
+  <keyword-highlight class="two-line" color="green" text="{{text}}" keyword="{{key}}" />
+</view>
+<view class="card">
+  <view class="title">原文展示</view>
+  <keyword-highlight class="width100p free" color="{{color}}" text="{{text}}" keyword="{{key}}" />
+</view>
+<view class="card">
+  <view class="title">支持外部文字样式继承</view>
+  <view class="list">
+    <keyword-highlight class="width100p font-color" color="{{color}}" text="{{shortText}}" keyword="{{key}}" />
+    <keyword-highlight class="width100p font-align" color="{{color}}" text="{{shortText}}" keyword="{{key}}" />
+    <keyword-highlight class="width100p font-style" color="{{color}}" text="{{shortText}}" keyword="{{key}}" />
+  </view>
+</view>

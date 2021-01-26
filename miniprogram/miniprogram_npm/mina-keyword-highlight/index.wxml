@@ -1,0 +1,1 @@
+<text wx:for="{{textArray}}" wx:key="index" style="color:{{ item===keyword ? color : 'inherit' }}">{{item}}</text>

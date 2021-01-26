@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "mina-touch": "^1.0.1",
-    "mina-tools": "^1.0.0"
+    "mina-tool": "^1.0.0",
+    "mina-keyword-highlight": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {},

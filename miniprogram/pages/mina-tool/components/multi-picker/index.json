@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "multi-picker": "mina-tool/components/multi-picker"
+  },
+  "navigationBarTitleText": "多列选择组件 multi-picker"
+}

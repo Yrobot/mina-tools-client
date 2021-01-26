@@ -1,0 +1,13 @@
+<view class="card">
+  <view class="title">使用原生picker</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange"
+    value="{{value}}" range="{{multiArray}}">
+    当前选择：{{multiArray[0][value[0]]}}，{{multiArray[1][value[1]]}}，{{multiArray[2][value[2]]}}
+  </picker>
+</view>
+<view class="card">
+  <view class="title">使用multi-picker</view>
+  <multi-picker getRanges="{{getRanges}}" value='{{multiValue}}' bindchange='onFilterChange'>
+    当前选择：{{multiPickerArray[0][multiValue[0]]}}，{{multiPickerArray[1][multiValue[1]]}}，{{multiPickerArray[2][multiValue[2]]}}
+  </multi-picker>
+</view>

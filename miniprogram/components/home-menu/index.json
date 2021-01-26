@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "popup-window": "mina-tools/components/popup-window"
+    "popup-window": "mina-tool/components/popup-window"
   }
 }

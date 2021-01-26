@@ -3,7 +3,7 @@ const err_base64 =
 
 Component({
   properties: {
-    errUrl: {
+    err: {
       type: String,
       value: err_base64,
     },

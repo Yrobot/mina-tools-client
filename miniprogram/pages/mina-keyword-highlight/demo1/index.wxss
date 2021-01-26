@@ -1,0 +1,51 @@
+/* pages/keyword-highlight/index.wxss */
+page {
+  font-size: 14px;
+  text-align: left;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.card .list > keyword-highlight {
+  margin-top: 10px;
+}
+
+.one-line {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.two-line {
+  width: 100%;
+
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.width100p {
+  display: block;
+  width: 100%;
+}
+
+.font-big {
+  font-size: 16px;
+}
+.font-color {
+  color: green;
+}
+.font-align {
+  text-align: right;
+}
+.font-weight {
+  font-weight: bold;
+}
+.font-style {
+  font-style: italic;
+}

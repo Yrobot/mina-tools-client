@@ -35,67 +35,80 @@ Page({
         ],
       },
       {
-        title: 'mina-tools',
-        id: 'mina-tools',
-        icon: 'icon-mina-tools',
+        title: 'mina-keyword-highlight',
+        id: 'mina-keyword-highlight',
+        icon: 'icon-mina-keyword-highlight',
         description: '',
         list: [
           {
-            title: '组件',
-            description: '',
-            list: [
-              {
-                title: 'popup-window',
-                description: '浮动弹窗',
-                path: '/pages/mina-tools/components/popup-window/index',
-              },
-              {
-                title: 'error-img',
-                description: '错图兜底',
-                path: '/pages/mina-tools/components/error-img/index',
-              },
-              {
-                title: 'data-status',
-                description: '状态展示',
-                path: '/pages/mina-tools/components/data-status/index',
-              },
-            ],
-          },
-          {
-            title: 'wxs',
-            description: '',
-            list: [
-              {
-                title: 'format',
-                description: '数据格式化',
-                path: '/pages/mina-tools/wxs/format/index',
-              },
-            ],
-          },
-          {
-            title: 'wxss',
-            description: '',
-            list: [
-              {
-                title: 'common',
-                description: '常用小程序样式',
-                path: '/pages/mina-tools/wxss/common/index',
-              },
-            ],
-          },
-          {
-            title: 'behavior',
-            description: '',
-            list: [
-              {
-                title: 'pageEvent',
-                description: '组件监听页面事件',
-                path: '/pages/mina-tools/behavior/pageEvent/index',
-              },
-            ],
+            title: '文本关键词高亮',
+            description: '支持外部文字样式继承',
+            path: '/pages/mina-keyword-highlight/demo1/index',
           },
         ],
       },
+      // {
+      //   title: 'mina-tool',
+      //   id: 'mina-tool',
+      //   icon: 'icon-mina-tools',
+      //   description: '',
+      //   list: [
+      //     {
+      //       title: '组件',
+      //       description: '',
+      //       list: [
+      //         {
+      //           title: 'popup-window',
+      //           description: '浮动弹窗',
+      //           path: '/pages/mina-tool/components/popup-window/index',
+      //         },
+      //         {
+      //           title: 'error-img',
+      //           description: '错图兜底',
+      //           path: '/pages/mina-tool/components/error-img/index',
+      //         },
+      //         {
+      //           title: 'data-status',
+      //           description: '状态展示',
+      //           path: '/pages/mina-tool/components/data-status/index',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'wxs',
+      //       description: '',
+      //       list: [
+      //         {
+      //           title: 'format',
+      //           description: '数据格式化',
+      //           path: '/pages/mina-tool/wxs/format/index',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'wxss',
+      //       description: '',
+      //       list: [
+      //         {
+      //           title: 'common',
+      //           description: '常用小程序样式',
+      //           path: '/pages/mina-tool/wxss/common/index',
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: 'behavior',
+      //       description: '',
+      //       list: [
+      //         {
+      //           title: 'pageEvent',
+      //           description: '组件监听页面事件',
+      //           path: '/pages/mina-tool/behavior/pageEvent/index',
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
     ],
   },
   menu: {
@@ -116,8 +129,8 @@ Page({
       });
       wx.pageScrollTo({
         selector: `#${main}`,
-        duration: 300
-      })
+        duration: 300,
+      });
     }
     this.menu = this.selectComponent('#home-menu');
   },
