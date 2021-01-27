@@ -1,3 +1,10 @@
+page {
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background-color: var(--main-BG);
+  color: var(--main-color);
+}
+
 .card {
   width: 100%;
   padding: 20px;
@@ -52,4 +59,21 @@
 }
 .clear-hover-button::after {
   display: none;
+}
+
+.button {
+  padding: 0 100rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+}
+
+.button-main {
+  color: #fff;
+  background-color: var(--main-color);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }

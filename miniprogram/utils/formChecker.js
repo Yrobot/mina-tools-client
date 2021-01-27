@@ -5,7 +5,7 @@
  * @param {Object} messages 验证字段的提示信息
  *
  */
-class WxValidate {
+class FormChecker {
   constructor(rules = {}, messages = {}) {
     Object.assign(this, {
       data: {},
@@ -426,4 +426,4 @@ class WxValidate {
   }
 }
 
-export default WxValidate;
+export default FormChecker;

@@ -6,15 +6,25 @@
     <view class="iconfont icon-Yorbot logo"></view>
     <view class="tips tips-color">本小程序主要用于展示一些在微信小程序开发中 实用的工具库</view>
   </view>
-  <collapse ext-class='collapse' wx:for="{{repositories}}" wx:for-item='box' wx:key='index' id='{{box.id}}' open="{{main==box.id}}">
+  <collapse ext-class='collapse' wx:for="{{repositories}}" wx:for-item='box' wx:key='index' id='{{box.id}}'
+    open="{{main==box.id}}">
     <view class="collapse-card" slot='card'>
-      <view class="title">{{box.title}}</view>
+      <view class="title">
+        <view>
+          {{box.title}}
+        </view>
+        <view>
+          {{box.description}}
+        </view>
+      </view>
       <view class="iconfont {{box.icon}}"></view>
     </view>
     <view class="collapse-list list" slot='list'>
       <block wx:for="{{box.list}}" wx:key='index'>
         <view bindtap='navigateTo' data-path="{{item.path||''}}" class="item {{!!item.path?'':'path-disable'}}">
-          <view class="title">{{item.title}}</view>
+          <view class="title">
+            {{item.title}}
+          </view>
           <view class="desc" wx:if="{{item.description}}">{{item.description}}</view>
         </view>
         <view class="sub-list" wx:if="{{!!item.list}}">

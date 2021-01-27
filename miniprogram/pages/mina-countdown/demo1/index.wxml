@@ -1,0 +1,18 @@
+<view class="head-box">
+  <view class="iconfont icon-Yorbot logo"></view>
+</view>
+<view class="main-box">
+  <view class="input-area">
+    <input class='item' type='number' value="{{formData.phone}}" data-type='phone' bindinput='inputChange'
+      maxlength="11" placeholder="请输入手机号" />
+    <view class="verification-box item">
+      <input maxlength="6" type='number' value="{{formData.code}}" data-type='code' bindinput='inputChange'
+        placeholder="请输入验证码" />
+      <view wx:if="{{countdown==0}}" class="send-tip" bindtap='sendVerificationCode'>获取验证码</view>
+      <view wx:else class="send-tip" bindtap='showCountdownNotification'>{{countdown}}秒后可重新发送</view>
+    </view>
+  </view>
+  <view class="bottun-box">
+    <view class="button button-main" bindtap="tapLogin">登录</view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+page {
+  --main-color: #2c2c2c;
+  --main-BG: #f8f8f8;
+}

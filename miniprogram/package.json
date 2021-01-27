@@ -4,9 +4,10 @@
   "description": "mina-tools的小程序客户端代码，用于mina-tools的效果展示",
   "main": "app.js",
   "dependencies": {
-    "mina-touch": "^1.0.1",
+    "mina-countdown": "^1.0.1",
+    "mina-keyword-highlight": "^1.0.0",
     "mina-tool": "^1.0.0",
-    "mina-keyword-highlight": "^1.0.0"
+    "mina-touch": "^1.0.1"
   },
   "devDependencies": {},
   "scripts": {},

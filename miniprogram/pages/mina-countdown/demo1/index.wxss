@@ -1,0 +1,70 @@
+page {
+  --head-height: 544rpx;
+  --page-padding: 74rpx;
+  padding: 0;
+}
+.head-box {
+  position: relative;
+  width: 100%;
+  height: var(--head-height);
+  background-color: var(--main-color);
+}
+.head-box .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 190rpx;
+  height: 190rpx;
+  font-size: 190rpx;
+  text-align: center;
+  line-height: 190rpx;
+}
+.main-box {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--head-height));
+  box-sizing: border-box;
+  padding: 104rpx var(--page-padding) 0;
+}
+.main-box .input-area {
+  width: 100%;
+  height: 320rpx;
+}
+.main-box .item {
+  margin-bottom: 24rpx;
+}
+.main-box input {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 96rpx;
+  padding: 0 38rpx;
+  box-sizing: border-box;
+  background: #edf1f1;
+  border-radius: 20rpx;
+}
+.main-box .verification-box {
+  position: relative;
+}
+.main-box .verification-box input {
+  padding-right: 180rpx;
+}
+.main-box .verification-box .send-tip {
+  position: absolute;
+  top: 50%;
+  right: 20rpx;
+  transform: translate(0, -50%);
+  font-size: 14px;
+  color: var(--main-color);
+}
+.main-box .tips {
+  font-size: 12px;
+  color: #999999;
+}
+.main-box .bottun-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}

@@ -7,10 +7,10 @@ Page({
     main: '',
     repositories: [
       {
-        title: 'mina-touch',
+        title: '监听各种手势',
         id: 'mina-touch',
         icon: 'icon-mina-touch',
-        description: '',
+        description: 'mina-touch',
         list: [
           {
             title: '普通滑动',
@@ -35,15 +35,28 @@ Page({
         ],
       },
       {
-        title: 'mina-keyword-highlight',
+        title: '关键词高亮',
         id: 'mina-keyword-highlight',
         icon: 'icon-mina-keyword-highlight',
-        description: '',
+        description: 'mina-keyword-highlight',
         list: [
           {
             title: '文本关键词高亮',
             description: '支持外部文字样式继承',
             path: '/pages/mina-keyword-highlight/demo1/index',
+          },
+        ],
+      },
+      {
+        title: '倒计时',
+        id: 'mina-countdown',
+        icon: 'icon-countdown',
+        description: 'mina-countdown',
+        list: [
+          {
+            title: '验证码发送',
+            description: '快速实现验证码发送倒计时',
+            path: '/pages/mina-countdown/demo1/index',
           },
         ],
       },

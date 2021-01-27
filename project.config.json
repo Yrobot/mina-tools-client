@@ -112,6 +112,12 @@
           "pathName": "pages/mina-tool/components/multi-picker/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/mina-countdown/demo1/index",
+          "pathName": "pages/mina-countdown/demo1/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
