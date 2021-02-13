@@ -24,7 +24,7 @@ Page({
   data: {
     countdown: 0,
     formData: {
-      phone: '',
+      phone: '15888888888',
       code: '',
     },
   },
