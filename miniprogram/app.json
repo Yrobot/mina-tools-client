@@ -10,6 +10,7 @@
     "pages/mina-tool/behavior/pageEvent/index",
     "pages/mina-keyword-highlight/demo1/index",
     "pages/mina-countdown/demo1/index",
+    "pages/mina-countdown/demo2/index",
     "pages/mina-touch/demo1/index",
     "pages/mina-touch/demo2/index",
     "pages/mina-touch/demo3/index",

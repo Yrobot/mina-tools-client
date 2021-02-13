@@ -118,6 +118,11 @@
           "pathName": "pages/mina-countdown/demo1/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/mina-countdown/demo2/index",
+          "pathName": "pages/mina-countdown/demo2/index",
+          "scene": null
         }
       ]
     }

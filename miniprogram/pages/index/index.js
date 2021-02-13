@@ -58,6 +58,11 @@ Page({
             description: '快速实现验证码发送倒计时',
             path: '/pages/mina-countdown/demo1/index',
           },
+          {
+            title: '结点倒计时',
+            description: '时间结点倒数',
+            path: '/pages/mina-countdown/demo2/index',
+          },
         ],
       },
       // {

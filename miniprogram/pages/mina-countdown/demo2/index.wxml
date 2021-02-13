@@ -1,0 +1,7 @@
+<wxs src="../../../miniprogram_npm/mina-tool/wxs/format.wxs" module="format" />
+<view class="countdown-box">{{format.formatCountdown(countdown,'hh:mm:ss')}}</view>
+<view class="button-list">
+  <view class="button button-main" bindtap='newCountdown' data-count="{{60*60}}">倒计时1小时</view>
+  <view class="button button-main" bindtap='newCountdown' data-count="{{60}}">倒计时1分钟</view>
+  <view class="button button-main" bindtap='newCountdown' data-count="{{3}}">倒计时3秒</view>
+</view>
