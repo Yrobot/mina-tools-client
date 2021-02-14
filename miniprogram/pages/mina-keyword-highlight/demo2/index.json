@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "keyword-highlight": "mina-keyword-highlight"
+  },
+  "navigationBarTitleText": "搜索结果关键词高亮"
+}

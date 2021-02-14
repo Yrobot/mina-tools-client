@@ -1,0 +1,31 @@
+page {
+  padding: 30rpx;
+}
+
+.search-input {
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+
+.list-holder {
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #666;
+}
+
+.item {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

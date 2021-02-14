@@ -41,6 +41,11 @@ Page({
         description: 'mina-keyword-highlight',
         list: [
           {
+            title: '搜索高亮',
+            description: '搜索结果关键词高亮',
+            path: '/pages/mina-keyword-highlight/demo2/index',
+          },
+          {
             title: '文本关键词高亮',
             description: '支持外部文字样式继承',
             path: '/pages/mina-keyword-highlight/demo1/index',

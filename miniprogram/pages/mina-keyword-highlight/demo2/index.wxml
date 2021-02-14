@@ -1,0 +1,8 @@
+<input class="search-input" value="{{initSearch}}" type="text" placeholder="请输入搜索词" bindinput="inputChage">
+</input>
+<view class="list-holder">
+  <view wx:for="{{list}}" wx:key="index" class="item">
+    <keyword-highlight text="{{item}}" keyword="{{keyword}}">
+    </keyword-highlight>
+  </view>
+</view>
