@@ -6,7 +6,7 @@ Page({
   data: {
     list: [],
     keyword: '',
-    initSearch: '关键词',
+    initSearch: '小程序',
   },
   onLoad() {
     if (this.data.initSearch) this.getSuggestions(this.data.initSearch);
