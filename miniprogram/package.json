@@ -7,6 +7,7 @@
     "mina-countdown": "^1.0.1",
     "mina-keyword-highlight": "^1.0.0",
     "mina-tool": "^1.0.0",
+    "mina-popups": "^1.0.0",
     "mina-touch": "^1.0.1"
   },
   "devDependencies": {},

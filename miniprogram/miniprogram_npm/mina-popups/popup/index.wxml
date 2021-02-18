@@ -1,0 +1,11 @@
+<func-visible id="func-visible">
+  <popup-backgroud wx:if="{{background}}" color="{{bgColor}}" tapClose="{{tapBgClose}}" scrollClose="{{scrollBgClose}}"
+    catchScroll="{{catchScroll}}" bindclose="close">
+  </popup-backgroud>
+  <fixed-position wx:if="{{position=='fixed'}}" unit='{{unit}}' id='fixed-position' left="{{left}}" top="{{top}}">
+    <slot></slot>
+  </fixed-position>
+  <center-position wx:elif="{{position=='center'}}">
+    <slot></slot>
+  </center-position>
+</func-visible>

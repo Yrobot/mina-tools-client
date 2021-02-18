@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "popover": "mina-popups/popover"
+    "popover": "../popover"
   }
 }
