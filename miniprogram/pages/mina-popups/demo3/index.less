@@ -1,30 +1,38 @@
-.background {
-  position: relative;
+page {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.fixed-selectors-holder {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .box {
-    width: 300rpx;
-    height: 500rpx;
+  padding: 20rpx 0;
+  .fixed-selector {
     background-color: var(--main-color);
-    .tips {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      left: 50%;
-      top: 50%;
-      color: #fff;
-      font-size: 16px;
-      transform: translate(-50%, -50%);
-    }
+    color: #fff;
+    padding: 4px 6px;
   }
 }
 
-page {
+.popup-inner {
   width: 100%;
   height: 100%;
-  padding: 0;
+  min-width: 200rpx;
+  min-height: 120rpx;
+  font-size: 30px;
+  font-weight: 800;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.bottom-area-size {
+  width: 100%;
+  height: 120rpx;
+  box-sizing: content-box;
+  padding-bottom: 30px;
+}
+
+.bottom-area-position {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

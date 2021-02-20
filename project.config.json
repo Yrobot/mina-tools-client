@@ -134,6 +134,12 @@
         {
           "name": "mina-popups/demo1",
           "pathName": "pages/mina-popups/demo1/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "popups/demo2",
+          "pathName": "pages/mina-popups/demo2/index",
           "scene": null
         }
       ]

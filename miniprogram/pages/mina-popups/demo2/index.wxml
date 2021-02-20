@@ -1,6 +1,12 @@
-<view class="background">
-  <view class="box" style="transform:rotate({{angle}}deg) scale({{zoom}});" catchtouchstart="touch1.start"
-    catchtouchmove="touch1.move" catchtouchend="touch1.end" catchtouchcancel="touch1.cancel">
-    <div class="tips">多指控制试试</div>
-  </view>
+<config-setter config="{{config}}" data="{{popup}}" bindchange="configChange"></config-setter>
+
+<view class="bottom-area-size"></view>
+<view class="bottom-area-position bottom-area-size  center-center">
+  <view class="button button-main" bindtap="open">打开popover</view>
 </view>
+
+<popup show="{{show}}" position="{{popup.position}}" mask="{{popup.mask}}" catchScroll="{{popup.catchScroll}}"
+  tapMaskClose="{{popup.tapMaskClose}}" scrollMaskClose="{{popup.scrollMaskClose}}" maskColor="{{popup.maskColor}}"
+  selector="{{popup.selector}}" left="{{popup.left}}" top="{{popup.top}}" unit="{{popup.unit}}">
+  <view class="popup-inner center-center" bindtap="close">X</view>
+</popup>

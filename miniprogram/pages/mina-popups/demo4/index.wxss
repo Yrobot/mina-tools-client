@@ -1,29 +1,34 @@
-.background {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.background .box {
-  width: 300rpx;
-  height: 500rpx;
-  background-color: var(--main-color);
-}
-.background .box .tips {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  left: 50%;
-  top: 50%;
-  color: #fff;
-  font-size: 16px;
-  transform: translate(-50%, -50%);
-}
 page {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.fixed-selectors-holder {
+  width: 100%;
+  padding: 20rpx 0;
+}
+.fixed-selectors-holder .fixed-selector {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 4px 6px;
+}
+.popup-inner {
   width: 100%;
   height: 100%;
-  padding: 0;
+  min-width: 200rpx;
+  min-height: 120rpx;
+  font-size: 30px;
+  font-weight: 800;
+  background-color: var(--main-color);
+  color: #fff;
+}
+.bottom-area-size {
+  width: 100%;
+  height: 120rpx;
+  box-sizing: content-box;
+  padding-bottom: 30px;
+}
+.bottom-area-position {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

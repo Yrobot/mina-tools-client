@@ -1,53 +1,130 @@
-import MinaTouch from 'mina-touch'; //引入mina-touch
+const CONFIG_POSITION = {
+  title: '控制popup-position模式',
+  list: [
+    {
+      name: 'position',
+      type: 'PICKER',
+      typeData: ['fixed', 'center', 'left', 'right', 'top', 'bottom'],
+    },
+  ],
+};
+const CONFIG_POPUP = {
+  title: '控制popup主体',
+  list: [
+    {
+      name: 'selector',
+      type: 'PICKER',
+      typeData: ['', '#lefttop', '#righttop', '#leftbottom', '#rightbottom'],
+    },
+    {
+      name: 'left',
+      type: 'PICKER',
+      typeData: [0, 50, 100, 200],
+    },
+    {
+      name: 'top',
+      type: 'PICKER',
+      typeData: [0, 50, 100, 500],
+    },
+    {
+      name: 'unit',
+      type: 'TEXT',
+      disable: true,
+    },
+  ],
+};
+const CONFIG_MASK = {
+  title: '控制mask',
+  list: [
+    {
+      name: 'mask',
+      type: 'SWITCH',
+    },
+    {
+      name: 'catchScroll',
+      type: 'SWITCH',
+    },
+    {
+      name: 'tapMaskClose',
+      type: 'SWITCH',
+    },
+    {
+      name: 'scrollMaskClose',
+      type: 'SWITCH',
+    },
+    {
+      name: 'maskColor',
+      type: 'TEXT',
+      disable: true,
+    },
+  ],
+};
 
-Page({
+Component({
   data: {
-    tip: '',
+    config: [CONFIG_POSITION, CONFIG_POPUP, CONFIG_MASK],
+    popup: {
+      mask: true,
+      catchScroll: true,
+      tapMaskClose: true,
+      scrollMaskClose: false,
+      maskColor: 'rgba(0, 0, 0, 0.6)',
+      selector: '#lefttop',
+      left: 0,
+      top: 0,
+      unit: 'px',
+      position: 'fixed',
+    },
+    show: false,
   },
-  onLoad: function (options) {
-    const that = this;
-    new MinaTouch(this, 'touch1', {
-      //会创建this.touch1指向实例对象
-      touchStart: function () {},
-      touchMove: function () {},
-      touchEnd: function () {
+  observers: {
+    'popup.position': function (position) {
+      if (position == 'fixed') {
         this.setData({
-          tip: '',
+          config: [CONFIG_POSITION, CONFIG_POPUP, CONFIG_MASK],
         });
-      }.bind(this),
-      touchCancel: function () {},
-      multipointStart: function (evt) {}, //一个手指以上触摸屏幕触发
-      multipointEnd: function () {}, //当手指离开，屏幕只剩一个手指或零个手指触发(一开始只有一根手指也会触发)
-      tap: function () {}, //点按触发，覆盖下方3个点击事件，doubleTap时触发2次
-      doubleTap: function () {}, //双击屏幕触发
-      longTap: function () {
+      } else {
         this.setData({
-          tip: '长按ing',
+          config: [CONFIG_POSITION, CONFIG_MASK],
         });
-      }.bind(this), //长按屏幕750ms触发
-      singleTap: function () {}, //单击屏幕触发，包括长按
-      rotate: function (evt) {
-        //evt.angle代表两个手指旋转的角度
-      },
-      pinch: function (evt) {
-        //evt.zoom代表两个手指缩放的比例(多次缩放的累计值),evt.singleZoom代表单次回调中两个手指缩放的比例
-      },
-      pressMove: function (evt) {
-        //evt.deltaX和evt.deltaY代表在屏幕上移动的距离,evt.target可以用来判断点击的对象
-        // console.log(evt.target);
-        // console.log(evt.deltaX);
-        // console.log(evt.deltaY);
-      },
-      swipe: function (evt) {
-        //在touch结束触发，evt.direction代表滑动的方向 ['Up','Right','Down','Left']
-        // console.log("swipe:" + evt.direction);
-      },
-    });
+      }
+    },
   },
-  onShareAppMessage(res) {
-    return {
-      title: '这个小程序开发工具很实用哦～',
-      imageUrl: 'https://t.newscdn.cn/mina/Poster (1).png',
-    };
+  onLoad: function (options) {},
+  methods: {
+    configChange(e) {
+      this.setData({
+        popup: {
+          ...this.data.popup,
+          ...e.detail,
+        },
+      });
+    },
+    open() {
+      this.setData({
+        show: true,
+      });
+    },
+    close() {
+      this.setData({
+        show: false,
+      });
+    },
+    tapFixedSelector(e) {
+      const id = e.currentTarget.id;
+      this.setData({
+        popup: {
+          ...this.data.popup,
+          selector: `#${id}`,
+        },
+      });
+      this.open();
+    },
+    onShareAppMessage(res) {
+      return {
+        title: '这个小程序开发工具很实用哦～',
+        imageUrl: 'https://t.newscdn.cn/mina/Poster (1).png',
+      };
+    },
   },
 });
