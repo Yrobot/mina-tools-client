@@ -12,6 +12,7 @@ page {
   background-color: #fff;
   border-radius: 2px;
   overflow: hidden;
+  margin-top: 20rpx;
   margin-bottom: 20rpx;
 }
 .card .title {

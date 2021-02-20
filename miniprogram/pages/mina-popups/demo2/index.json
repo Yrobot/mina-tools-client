@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "popup组件展示",
   "usingComponents": {
-    "popup": "mina-popups/popup",
+    "popover": "mina-popups/popover",
     "config-setter": "../../../components/config-setter"
   }
 }

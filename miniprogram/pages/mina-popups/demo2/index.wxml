@@ -1,12 +1,50 @@
-<config-setter config="{{config}}" data="{{popup}}" bindchange="configChange"></config-setter>
+<config-setter config="{{top_tip}}" data="{{popover}}" bindchange="configChange"></config-setter>
+<config-setter config="{{demo_tip}}" data="{{popover}}" bindchange="configChange"></config-setter>
+<view class="fixed-selectors-holder flex-between">
+  <view class="fixed-selector" id='popmenu' bindtap='tapFixedSelector'>打开气泡菜单</view>
+  <view class="fixed-selector" id='tooltip' bindtap='tapFixedSelector'>打开文字提示气泡</view>
+</view>
+<config-setter config="{{bottom_tip}}" data="{{popover}}" bindchange="configChange"></config-setter>
+<config-setter config="{{fixed_config}}" data="{{popover}}" bindchange="configChange"></config-setter>
+<config-setter config="{{mask_config}}" data="{{popover}}" bindchange="configChange"></config-setter>
 
 <view class="bottom-area-size"></view>
 <view class="bottom-area-position bottom-area-size  center-center">
-  <view class="button button-main" bindtap="open">打开popover</view>
+  <view class="button button-main" bindtap="open">打开fixed-popover</view>
 </view>
 
-<popup show="{{show}}" position="{{popup.position}}" mask="{{popup.mask}}" catchScroll="{{popup.catchScroll}}"
-  tapMaskClose="{{popup.tapMaskClose}}" scrollMaskClose="{{popup.scrollMaskClose}}" maskColor="{{popup.maskColor}}"
-  selector="{{popup.selector}}" left="{{popup.left}}" top="{{popup.top}}" unit="{{popup.unit}}">
-  <view class="popup-inner center-center" bindtap="close">X</view>
-</popup>
+<popover show="{{fixed_show}}" mask="{{popover.mask}}" catchScroll="{{popover.catchScroll}}"
+  tapMaskClose="{{popover.tapMaskClose}}" scrollMaskClose="{{popover.scrollMaskClose}}"
+  maskColor="{{popover.maskColor}}" left="{{popover.left}}" top="{{popover.top}}" unit="{{popover.unit}}"
+  translateX="{{popover.translateX}}">
+  <view class="fixed-popover-inner">
+    根据left、top定位popover
+  </view>
+</popover>
+
+<popover selector='#popmenu' show="{{popmenu_show}}" mask="{{true}}" catchScroll="{{true}}" tapMaskClose="{{true}}"
+  scrollMaskClose="{{false}}" maskColor="rgba(0, 0, 0, 0.6)">
+  <view class="menu-demo" bindtap='tapMenu'>
+    <view class="menu-item-line">
+      <view class="icon-demo"></view>
+      <span>Scan</span>
+    </view>
+    <view class="dividing-line"></view>
+    <view class="menu-item-line">
+      <view class="icon-demo"></view>
+      <span>My Qrcode</span>
+    </view>
+    <view class="dividing-line"></view>
+    <view class="menu-item-line">
+      <view class="icon-demo"></view>
+      <span>Help</span>
+    </view>
+  </view>
+</popover>
+
+<popover selector='#tooltip' show="{{tooltip_show}}" mask="{{true}}" catchScroll="{{false}}" tapMaskClose="{{true}}"
+  scrollMaskClose="{{true}}" maskColor="transparent">
+  <view class="fixed-popover-inner">
+    tooltip
+  </view>
+</popover>

@@ -24,6 +24,10 @@ Component({
       type: Number,
       value: 0,
     },
+    unit: {
+      type: String,
+      value: 'px',
+    },
     tapMaskClose: {
       type: Boolean,
       value: true,

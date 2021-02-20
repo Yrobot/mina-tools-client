@@ -11,15 +11,8 @@ page {
   color: #fff;
   padding: 4px 6px;
 }
-.popup-inner {
-  width: 100%;
-  height: 100%;
-  min-width: 200rpx;
-  min-height: 120rpx;
-  font-size: 30px;
-  font-weight: 800;
-  background-color: var(--main-color);
-  color: #fff;
+.fixed-popover-inner {
+  white-space: nowrap;
 }
 .bottom-area-size {
   width: 100%;
@@ -31,4 +24,34 @@ page {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+.popover {
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+.menu-demo {
+  white-space: nowrap;
+}
+.menu-demo .menu-item-line {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-demo .menu-item-line .icon-demo {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  margin: 8px;
+}
+.menu-demo .dividing-line {
+  width: 100%;
+  border-top: 1px solid #ddd;
 }
