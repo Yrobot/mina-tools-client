@@ -1,4 +1,4 @@
-<popover selector='{{selector}}' id='popup-window' bg-close="{{true}}">
+<popover selector='{{selector}}' id='popup-window' tapMaskClose="{{true}}">
   <view class="user-menu">
     <view class="user-info-box menu-line-padding">
       <open-data class="avatar" type="userAvatarUrl"></open-data>

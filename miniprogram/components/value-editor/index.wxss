@@ -1,0 +1,5 @@
+switch {
+  transform-origin: right center;
+  /* 32 * 0.75 = 24px */
+  transform: scale(0.75);
+}

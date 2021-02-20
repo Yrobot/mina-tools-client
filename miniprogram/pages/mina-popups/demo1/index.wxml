@@ -1,0 +1,20 @@
+<view class="fixed-selectors-holder flex-between" wx:if="{{popup.position=='fixed'}}">
+  <view class="fixed-selector" id='lefttop' bindtap='tapFixedSelector'>#lefttop</view>
+  <view class="fixed-selector" id='righttop' bindtap='tapFixedSelector'>#righttop</view>
+</view>
+<config-setter config="{{config}}" data="{{popup}}" bindchange="configChange"></config-setter>
+<view class="fixed-selectors-holder flex-between" wx:if="{{popup.position=='fixed'}}">
+  <view class="fixed-selector" id='leftbottom' bindtap='tapFixedSelector'>#leftbottom</view>
+  <view class="fixed-selector" id='rightbottom' bindtap='tapFixedSelector'>#rightbottom</view>
+</view>
+
+<view class="bottom-area-size"></view>
+<view class="bottom-area-position bottom-area-size  center-center">
+  <view class="button button-main" bindtap="open">打开popup</view>
+</view>
+
+<popup show="{{show}}" position="{{popup.position}}" mask="{{popup.mask}}" catchScroll="{{popup.catchScroll}}"
+  tapMaskClose="{{popup.tapMaskClose}}" scrollMaskClose="{{popup.scrollMaskClose}}" maskColor="{{popup.maskColor}}"
+  selector="{{popup.selector}}" left="{{popup.left}}" top="{{popup.top}}" unit="{{popup.unit}}">
+  <view class="popup-inner center-center" bindtap="close">X</view>
+</popup>

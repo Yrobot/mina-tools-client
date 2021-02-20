@@ -1,0 +1,5 @@
+/* components/config-setter/index.wxss */
+.config-line {
+  width: 100%;
+  height: 80rpx;
+}

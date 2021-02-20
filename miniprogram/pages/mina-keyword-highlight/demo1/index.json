@@ -2,5 +2,5 @@
   "usingComponents": {
     "keyword-highlight": "mina-keyword-highlight"
   },
-  "navigationBarTitleText": "关键词高亮组件"
+  "navigationBarTitleText": "文章关键词高亮"
 }

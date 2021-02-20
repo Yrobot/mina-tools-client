@@ -1,0 +1,8 @@
+<view class="card" wx:for="{{config}}" wx:for-item="box" wx:key="index">
+  <view class="title">{{box.title}}</view>
+  <view class="config-line flex-between" wx:for="{{box.list}}" wx:key="index">
+    <view>{{item.name}}</view>
+    <value-editor value="{{data[item.name]}}" typeData="{{item.typeData}}" type="{{item.type}}" disable="{{item.disable}}" data-key="{{item.name}}"
+      bindchange="configChange"></value-editor>
+  </view>
+</view>

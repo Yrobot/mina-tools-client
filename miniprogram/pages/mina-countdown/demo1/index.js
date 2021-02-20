@@ -151,4 +151,10 @@ Page({
       duration: 1000,
     });
   },
+  onShareAppMessage(res) {
+    return {
+      title: '这个小程序开发工具很实用哦～',
+      imageUrl: 'https://t.newscdn.cn/mina/Poster (1).png',
+    };
+  },
 });

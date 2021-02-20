@@ -3,6 +3,7 @@
   "usingComponents": {
     "fixed-position": "./fixed-position",
     "center-position": "./center-position",
+    "border-position": "./border-position",
     "func-visible": "./func-visible",
     "popup-backgroud": "./popup-backgroud"
   }

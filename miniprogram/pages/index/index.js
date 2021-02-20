@@ -7,7 +7,7 @@ Page({
     main: '',
     repositories: [
       {
-        title: '监听各种手势',
+        title: '监听交互手势',
         id: 'mina-touch',
         icon: 'icon-mina-touch',
         description: 'mina-touch',
@@ -46,7 +46,7 @@ Page({
             path: '/pages/mina-keyword-highlight/demo2/index',
           },
           {
-            title: '文本关键词高亮',
+            title: '文章关键词高亮',
             description: '支持外部文字样式继承',
             path: '/pages/mina-keyword-highlight/demo1/index',
           },
@@ -67,6 +67,30 @@ Page({
             title: '结点倒计时',
             description: '时间结点倒数',
             path: '/pages/mina-countdown/demo2/index',
+          },
+        ],
+      },
+      {
+        title: '弹出组件集合',
+        id: 'mina-popups',
+        // icon: 'icon-popup',
+        icon: 'icon-mina-popups',
+        description: 'mina-popups',
+        list: [
+          {
+            title: '基础弹出组件',
+            description: 'popup组件展示',
+            path: '/pages/mina-popups/demo1/index',
+          },
+          {
+            title: '气泡组件',
+            description: 'popover组件展示',
+            path: '/pages/mina-popups/demo2/index',
+          },
+          {
+            title: '菜单气泡组件',
+            description: 'menu-popover组件展示',
+            path: '/pages/mina-popups/demo3/index',
           },
         ],
       },

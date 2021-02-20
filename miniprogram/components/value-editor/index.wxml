@@ -1,0 +1,14 @@
+<block wx:if="{{disable}}">
+  <view class="disable-color">
+    {{value}}
+  </view>
+</block>
+<block wx:else>
+  <picker wx:if="{{type=='PICKER'}}" value="{{value}}" range="{{typeData}}" bindchange="change">
+    <text space="emsp">  {{value}}</text>
+  </picker>
+  <switch wx:elif="{{type=='SWITCH'}}" checked="{{value}}" bindchange="change" color='#2c2c2c' />
+  <view wx:else>
+    {{value}}
+  </view>
+</block>

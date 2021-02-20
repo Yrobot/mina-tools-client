@@ -128,6 +128,12 @@
         {
           "name": "pages/mina-keyword-highlight/demo2/index",
           "pathName": "pages/mina-keyword-highlight/demo2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "mina-popups/demo1",
+          "pathName": "pages/mina-popups/demo1/index",
           "scene": null
         }
       ]
