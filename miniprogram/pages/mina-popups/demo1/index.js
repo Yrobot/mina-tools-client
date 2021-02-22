@@ -69,7 +69,7 @@ Component({
       tapMaskClose: true,
       scrollMaskClose: false,
       maskColor: 'rgba(0, 0, 0, 0.6)',
-      selector: '#lefttop',
+      selector: '',
       left: 0,
       top: 0,
       unit: 'px',
