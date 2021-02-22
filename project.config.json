@@ -98,7 +98,7 @@
         {
           "name": "pages/index/index",
           "pathName": "pages/index/index",
-          "query": "main=mina-tools",
+          "query": "main=mina-countdown",
           "scene": null
         },
         {
@@ -140,6 +140,13 @@
         {
           "name": "popups/demo2",
           "pathName": "pages/mina-popups/demo2/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "mina-popups/demo3",
+          "pathName": "pages/mina-popups/demo3/index",
+          "query": "",
           "scene": null
         }
       ]

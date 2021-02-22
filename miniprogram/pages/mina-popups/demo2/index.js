@@ -40,7 +40,7 @@ const CONFIG_TIPS = {
       tip: true,
     },
     {
-      name: 'mina-popups/menu-popover原理就是，计算小程序药丸位置，并通过left+top的方式来定位popover',
+      name: 'mina-popups/menu-popover原理就是，计算小程序胶囊位置，并通过left+top的方式来定位popover',
       tip: true,
     },
   ],

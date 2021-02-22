@@ -88,7 +88,7 @@ Page({
             path: '/pages/mina-popups/demo2/index',
           },
           {
-            title: '菜单气泡组件',
+            title: '胶囊气泡组件',
             description: 'menu-popover组件展示',
             path: '/pages/mina-popups/demo3/index',
           },
@@ -173,6 +173,7 @@ Page({
     if (main) {
       this.setData({
         main,
+        repositories: this.data.repositories.sort((a, b) => (a.id == main ? -1 : 1)),
       });
       wx.pageScrollTo({
         selector: `#${main}`,
