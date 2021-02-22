@@ -169,7 +169,8 @@ Page({
     };
   },
   onLoad(query) {
-    const { main = '' } = query;
+    const { main: pathMain = '', scene = '' } = query;
+    const main = pathMain || decodeURIComponent(scene);
     if (main) {
       this.setData({
         main,

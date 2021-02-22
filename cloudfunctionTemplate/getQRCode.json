@@ -1,0 +1,9 @@
+[
+  {
+    "name": "qrcode",
+    "value": {
+      "page": "pages/mina-popups/demo3/index",
+      "scene": "qrcode=1"
+    }
+  }
+]
