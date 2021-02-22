@@ -83,12 +83,12 @@ Page({
             path: '/pages/mina-popups/demo1/index',
           },
           {
-            title: '气泡组件',
+            title: '气泡卡片',
             description: 'popover组件展示',
             path: '/pages/mina-popups/demo2/index',
           },
           {
-            title: '胶囊气泡组件',
+            title: '胶囊气泡卡片',
             description: 'menu-popover组件展示',
             path: '/pages/mina-popups/demo3/index',
           },
